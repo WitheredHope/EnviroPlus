@@ -58,3 +58,13 @@ def main():
             Light = {} <br/>
             Humidity = {} <br/>
         """.format(temp, gas, pressure, light, humidity))
+@app.route("debug")
+def debug():
+    cpuTemp = getCpuTemp()
+    rawTemp = bme280.get_temperature()
+    temp = getTemp()
+    return("""
+    CPU Temp = {} <br/>
+    Raw Temp = {} <br/>
+    Temp = {} <br/>
+    """.format(cpuTemp, rawTemp, temp))
