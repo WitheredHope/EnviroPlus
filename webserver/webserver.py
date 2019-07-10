@@ -28,7 +28,7 @@ def getTemp():
     factor = 0.8
     rawTemp = bme280.get_temperature()
     cpuTemp = getCpuTemp()
-    calcTemp = rawTemp - (rawTemp-cpuTemp)/factor
+    calcTemp = cpuTemp - (cpuTemp-rawTemp)/factor
     return(calcTemp)
 
 def getPressure():
