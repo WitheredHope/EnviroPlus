@@ -7,7 +7,7 @@
   Basic Setup
 </h1>
 
-1. Grab the Raspbian Install image, Im using buster
+1. Grab the Raspbian Install image, I'm using buster
 2. Enable SSH and connect to wifi (I did this using a physical connection but there's a variety of other ways to do it)
 3. ```sh sudo apt update ```
 4. ```sh sudo apt upgrade ```
